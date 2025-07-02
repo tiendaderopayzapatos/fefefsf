@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tendencias Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="mostrarUsuarioLogueado(); renderizarProductos(productos); actualizarBotonPago();">
+  <header>
+    <h1>Tendencias Shop</h1>
+    <nav id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="login.html">Iniciar sesión</a>
+      <a href="registro.html">Registrarse</a>
+      <a href="carrito.html">Carrito 🛒</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contenedor-productos" class="grid-productos">
+      <!-- Los productos se cargan aquí desde script.js -->
+    </section>
+  </main>
+
+  <!-- Modal para descripción -->
+  <div id="modal-descripcion" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar" onclick="cerrarModal()">&times;</span>
+      <h2 id="modal-nombre"></h2>
+      <p id="modal-descripcion-texto"></p>
+    </div>
+  </div>
+
+  <script src="productos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iniciar Sesión</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>UrbanStyle</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li id="user-menu"><a href="login.html">Iniciar Sesión</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Inicia Sesión</h2>
+    <form id="form-login">
+      <label for="usuario">Usuario:</label>
+      <input type="text" id="usuario" required />
+      <label for="clave">Contraseña:</label>
+      <input type="password" id="clave" required />
+      <button type="submit">Iniciar Sesión</button>
+    </form>
+    <p>¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
+  </main>
+
+  <script src="usuarios.js"></script>
+</body>
+</html>
